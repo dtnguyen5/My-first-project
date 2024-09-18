@@ -1,0 +1,1015 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Playwrite+CZ:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Gloria+Hallelujah&family=Kalnia+Glaze:wght@100..700&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --barva_1:(rgba(8, 7, 7, 0.667));
+    --clr-second: rgb(116, 69, 69);
+    --zluta:rgb(219, 219, 88);
+    --cervena: rgb(193, 109, 109);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden; 
+}
+
+.Menu_Ramen {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#M_Ramen {
+    background-image: url("Images/ramen_3.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+header {
+    width: 90%;
+    height: 19vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 175px;
+    width: 360px;
+    position: absolute;
+    top: 8px;
+    left: 100px;
+}
+
+.buttony {
+    color: rgb(200, 217, 232);
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-top: 35px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar {
+    justify-content: space-around;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.buttony::after {
+    content: "";
+    background-color: rgb(186, 99, 99);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.4s;
+    height: 3px;
+    width: 0;
+}
+
+.buttony:hover::after {
+    width: 100%;
+}
+
+.Container {
+    height: 80vh;
+    width: 34vw;
+    background-color: rgba(215, 148, 60, 0.8);
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    border-top-left-radius: 8vh;
+    border-bottom-left-radius: 8vh;
+    box-shadow: 0px 0px 10px 4px rgb(118, 37, 37);
+}
+
+#Container_1 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.Nadpis_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ga Maamli", sans-serif;
+    font-size: 25px;
+    text-shadow: 3px 3px 5px yellow;
+}
+
+.Text_Box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+}
+
+p{
+    font-size: 27px;
+    font-family: "Gelasio", serif;
+    text-shadow: 3px 3px 10px grey;
+}
+
+.box_images {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%; 
+    margin-top: 12px;
+}
+
+.Borec {
+    height: 280px;
+    width: 300px;
+    margin-top: 8px;
+}
+
+.sipka {
+    width: 250px;
+    height: 230px;
+}
+
+#šipka{
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    cursor: pointer;
+
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-19px);
+    }
+}
+
+.Click{
+    margin-left: 28px;
+    margin-bottom: 25px;
+    text-shadow: 4px 4px 10px red;
+}
+
+.Ceny_ramen {
+    min-height: 106vh;
+    width: 100%;
+    background-color:var(--clr-second);
+}
+
+.Nazev_ramen{
+    height: 20vh;
+    width: 70%;
+    background-color:var(--zluta);
+    position: relative;
+    top: 55px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    box-shadow: 4px 4px 10px black, inset 0px 1px 2px black;
+}
+
+#Ramen_Fotka{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.Fotecka_R{
+    height: 165px;
+    width: 200px;
+}
+
+.Smile_ramen{
+    height: 160px;
+    width: 180px;
+}
+
+.Ramen_nazev{
+   padding-top: 10px;
+   font-size: 3em;
+   padding-left: 30px;
+   font-family: "Permanent Marker", cursive;
+}
+
+.Obrazky_ceny{
+    min-height: 72vh;
+    width: 93%;
+    top: 85px;
+    right: 0px;
+    display: flex;
+    position: absolute;
+}
+
+#Obrazky_c{
+    background-color: var(--cervena);
+    border-top-left-radius: 60px;     
+    border-bottom-left-radius: 60px;  
+    box-shadow: -5px 3px 8px rgb(41, 38, 38), 0px -3px 8px  rgb(41, 38, 38);
+}
+
+.Pozice_R{
+    position: relative;
+}
+
+.Menu_R_1{
+    display: flex;
+}
+
+.Menu_R_1 img{
+    height: 255px;
+    width: 240px;
+    margin-top: 20px;
+    margin-left: 35px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);
+}
+
+.Menu_R_2{
+    display: flex;
+}
+
+.Menu_R_2 img{
+    height: 255px;
+    width: 240px;
+    margin-left: 35px;
+    margin-top: 8px;
+    border-radius: 20px;
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: var(--barva_1);
+}
+
+.Text_R_1{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.Text_R_2{
+    margin-top: 16px;
+    margin-left: 15px;
+}
+
+.text_menu_ramen{
+    font-size: 1.6em;
+    margin-left: 12px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0px 0px 5px rgb(105, 56, 42);
+}
+
+.H1_ramen{
+    font-family: "Vollkorn", serif;
+    font-size: 1.8em;
+    margin-left: 50px;
+    text-shadow: 0px 0px 5px rgb(255, 0, 0);
+}
+
+.Suroviny{
+    margin-left: 93px;
+    font-size: 0.95em;
+}
+
+.Horní_index{
+    font-size: 0.60em;
+}
+
+.koruna{
+    font-size: 1.1em;
+    margin-left:-5px;
+}
+
+Cena_kč{
+    font-size: 1.1em;
+}
+
+.Suroviny{
+    margin-top: -20px;
+    margin-left: 100px;
+}
+
+.Menu_R_3 img{
+    height: 255px;
+    width: 240px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);
+}
+
+.Menu_R_3{
+    display: flex;
+}
+
+.Text_R_3{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+
+.Menu_R_4 img{
+    height: 255px;
+    width: 240px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);
+}
+
+.Menu_R_4{
+    display: flex;
+}
+
+.Text_R_4{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.Ceny_sushi{
+    min-height: 130vh;
+    width: 100%;
+    background-color:var(--clr-second);
+    position: relative;
+}
+
+.Nazev_sushi{
+    height: 20vh;
+    width: 70%;
+    background-color: var(--zluta);
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    box-shadow: -4px 4px 10px black, inset 0px 1px 2px black;
+}
+
+#Sushi_fotka{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.king_sushi{
+    height: 165px;
+    width: 160px;
+}
+
+.glasses_sushi{
+    height: 160px;
+    width: 190px;
+}
+
+.Sushi_nazev{
+    padding-top: 10px;
+    font-size: 3em;
+    padding-left: 30px;
+    font-family: "Permanent Marker", cursive;
+}
+
+.Pozice_S{
+    position: relative;
+}
+
+.Obrazky_ceny_2{
+    min-height: 95vh;
+    width: 93%;
+    top: 250px;
+    left: 0px;
+    display: flex;
+    position: absolute;
+}
+
+#Obrazky_c_2{
+    background-color: var(--cervena);
+    border-top-right-radius: 60px;     
+    border-bottom-right-radius: 60px;  
+    box-shadow: 5px 3px 8px rgb(41, 38, 38), 0px -3px 8px  rgb(41, 38, 38);
+}
+
+.Menu_S_1{
+    display: flex;
+}
+
+.Menu_S_1 img{
+    height: 220px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 35px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);
+}
+
+.H1_sushi{
+    font-family: "Vollkorn", serif;
+    font-size: 1.8em;
+    margin-left: 50px;
+    text-shadow: 0px 0px 5px rgb(0, 255, 76);
+}
+
+.Text_S_1{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.Menu_S_2 img{
+    height: 220px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 35px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);
+}
+
+.Menu_S_2{
+    display: flex;
+}
+
+.Text_S_2{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.Menu_S_3 img{
+    height: 220px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 35px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);
+}
+
+.Menu_S_3{
+    display: flex;
+}
+
+.Text_S_3{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.Menu_S_4 img{
+    height: 220px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 35px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);
+}
+
+.Menu_S_4{
+    display: flex;
+}
+
+.Text_S_4{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.Menu_S_5 img{
+    height: 220px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 35px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);
+}
+
+.Menu_S_5{
+    display: flex;
+}
+
+.Text_S_5{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.Menu_S_6 img{
+    height: 220px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 35px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);
+}
+
+.Menu_S_6{
+    display: flex;
+}
+
+.Text_S_6{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.Ceny_tteokbokki{
+    min-height: 106vh;
+    width: 100%;
+    background-color:var(--clr-second);
+}
+
+.Nazev_tteokbokki{
+    height: 20vh;
+    width: 70%;
+    background-color:var(--zluta);
+    position: relative;
+    top: 55px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    box-shadow: 4px 4px 10px black, inset 0px 1px 2px black;
+}
+
+#Tteokbokki_fotka{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.Tteokbokki_nazev{
+    padding-top: 10px;
+    font-size: 3em;
+    padding-left: 30px;
+    font-family: "Permanent Marker", cursive;
+}
+
+.Smile_Tteokbokki{
+    height: 150px;
+    width: 144px;
+}
+
+.Normal_Tteokbokki{
+    height: 150px;
+    width: 140px;
+}
+
+.Pozice_T{
+    position: relative;
+}
+
+.Obrazky_ceny_3{
+    min-height: 72vh;
+    width: 93%;
+    top: 85px;
+    right: 0px;
+    display: flex;
+    position: absolute;
+}
+
+#Obrazky_c_3{
+    background-color: var(--cervena);
+    border-top-left-radius: 60px;     
+    border-bottom-left-radius: 60px;  
+    box-shadow: -5px 3px 8px rgb(41, 38, 38), 0px -3px 8px  rgb(41, 38, 38);
+}
+
+.Menu_T_1{
+    display: flex;
+}
+
+.Menu_T_1 img{
+    height: 255px;
+    width: 330px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);
+}
+
+.H1_tteokbokki{
+    font-family: "Vollkorn", serif;
+    font-size: 1.8em;
+    margin-left: 50px;
+    text-shadow: 0px 0px 5px rgb(255, 157, 0);
+}
+
+.Text_T_1{
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.Menu_T_2{
+    display: flex;
+}
+
+.Menu_T_2 img{
+    height: 250px;
+    width: 330px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);
+}
+
+.Text_T_2{
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.Menu_T_3 img{
+    height: 250px;
+    width: 330px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);
+}
+
+.Menu_T_3{
+    display: flex;
+}
+
+.Text_T_3{
+    margin-top: 25px;
+    margin-left: 10px
+}
+
+.Menu_T_4{
+    display: flex; 
+}
+
+.Menu_T_4 img{
+    height: 250px;
+    width: 330px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);
+}
+
+.Text_T_4{
+    margin-top: 25px;
+    margin-left: 10px
+}
+
+.Ceny_Bubble_Tea{
+    min-height: 145vh;
+    width: 100%;
+    background-color:var(--clr-second);
+    position: relative;
+}
+
+#Bubble_tea_fotka{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+
+.Nazev_bubble_tea{
+    height: 20vh;
+    width: 70%;
+    background-color: var(--zluta);
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    box-shadow: -4px 4px 10px black, inset 0px 1px 2px black;
+}
+
+.Bubble_tea_nazev{
+    padding-top: 10px;
+    font-size: 3em;
+    padding-left: 30px;
+    font-family: "Permanent Marker", cursive;
+}
+
+.Ghost_Bubble_Tea{
+    height: 140px;
+    width: 130px;
+}
+
+.Pozice_B{
+    position: relative;
+}
+
+.Bear_bubble_tea{
+    height: 150px;
+    width: 130px;
+}
+
+.Obrazky_ceny_4{
+    min-height: 110vh;
+    width: 93%;
+    top: 250px;
+    right: 0px;
+    display: flex;
+    position: absolute;
+}
+
+#Obrazky_c_4{
+    background-color: var(--cervena);
+    border-top-left-radius: 60px;     
+    border-bottom-left-radius: 60px;  
+    box-shadow: -5px 3px 8px rgb(41, 38, 38), 0px -3px 8px  rgb(41, 38, 38);   
+}
+
+.Menu_B_1 img{  
+    height: 255px;
+    width: 240px;
+    margin-top: 20px;
+    margin-left: 65px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);
+}
+
+.Text_B_1{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.Menu_B_1{
+    display: flex;
+}
+
+.H1_Bubble_Tea{
+    font-family: "Vollkorn", serif;
+    font-size: 1.8em;
+    margin-left: 50px;
+    text-shadow: 0px 0px 5px rgb(0, 255, 204);
+}
+
+.text_menu_bubble{
+    font-size: 1.6em;
+    margin-left: 12px;
+    margin-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0px 0px 5px rgb(105, 56, 42);
+}
+
+.Menu_B_2{
+    display: flex;
+}
+
+.Menu_B_2 img{
+    height: 255px;
+    width: 240px;
+    margin-top: 20px;
+    margin-left: 65px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);   
+}
+
+.Text_B_2{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.Menu_B_3{
+    display: flex;
+}
+
+.Menu_B_3 img{
+    height: 255px;
+    width: 240px;
+    margin-top: 20px;
+    margin-left: 65px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);  
+}
+
+.Text_B_3{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.Menu_B_4 img{
+    height: 255px;
+    width: 240px;
+    margin-top: 20px;
+    margin-left: 180px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);  
+}
+
+.Menu_B_4{
+    display: flex;
+}
+
+.Text_B_4{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.Menu_B_5{
+    display: flex;
+}
+
+.Text_B_5{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.Menu_B_5 img{
+    height: 255px;
+    width: 240px;
+    margin-top: 20px;
+    margin-left: 180px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1);  
+}
+
+.Menu_B_6{
+    display: flex;
+}
+
+.Menu_B_6 img{
+    height: 255px;
+    width: 240px;
+    margin-top: 20px;
+    margin-left: 180px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: var(--barva_1); 
+}
+
+.Text_B_6{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.Footer_Konec{
+    width: 100%;
+    height: 35vh;
+    background-color: rgb(72, 42, 54);
+}
+
+.Kocka_btn img{
+    height: 142px;
+    width: 280px;
+    margin-left: 120px;
+    position: relative;
+    left: -50px;
+}
+
+
+.Footer_Konec_2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px grey solid;
+    margin-left: 120px;
+    width: 82vw;
+}
+
+.Socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Socials_2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cislo_Mail{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.icon{
+    margin-left: 20px;
+    font-size: 1.9em;
+    text-decoration: none;
+}
+
+
+.Kontakt_2{
+    font-size: 1.1em;
+    margin: 10px 0px 0px 30px;
+    color: rgb(253, 253, 253);
+}
+
+.fa-instagram{
+    color: rgb(153, 147, 147);
+}
+
+.fa-facebook{
+    color: rgb(153, 147, 147);
+}
+
+.fa-square-x-twitter{
+    color: rgb(153, 147, 147);
+}
+
+.fa-youtube{
+    color: rgb(153, 147, 147);
+}
+
+.fa-instagram:hover{
+    color: #c13584;
+    transition: 0.5s;
+}
+
+.fa-facebook:hover{
+    color:rgb(64, 64, 218);
+    transition: 0.5s;
+}
+
+.fa-youtube:hover{
+    color: rgb(198, 55, 55);
+    transition: 0.5s;
+}
+
+.fa-square-x-twitter:hover{
+    color: black;
+    transition: 0.5s;
+}
+
+.Konec{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Konec_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 72%;
+    margin-top: 5px;
+}
+
+.Konec_2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.Konec_2 a:hover{
+    color: #c73085;
+    transition: 0.2s;
+    letter-spacing: 0.1em;
+}
+
+.Menu_Footer{
+    margin-top: 5px;
+}
+
+.Copyright{
+    font-size: 1.2em;
+    color: white;
+}
+
+.fa-envelope{
+    font-size: 1em;
+    color: rgb(205, 210, 214);
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.fa-phone{
+    margin-right: 5px;
+}
+
+@media (max-width: 900px) {
+
+    .Menu_Ramen{
+        display: flex;
+        flex-direction: column;
+    }    
+    
+    
+
+    }

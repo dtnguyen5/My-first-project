@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Playwrite+CZ:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Ga+Maamli&family=Playwrite+CZ:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgb(56, 27, 38), rgb(87, 35, 31));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+header {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header img {
+    height: 175px;
+    width: 360px;
+    position: absolute;
+    top: 3px;
+    left: 100px;
+    cursor: pointer;
+}
+
+.headers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    height: 18vh;
+    padding: 20px 10px 20px 10px;
+}
+
+.buttony {
+    color: rgb(200, 217, 232);
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-top: 35px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar {
+    justify-content: space-around;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 580px;
+}
+
+.buttony::after {
+    content: "";
+    background-color: rgb(186, 99, 99);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.4s;
+    height: 3px;
+    width: 0;
+}
+
+.buttony:hover::after {
+    width: 100%;
+}
+
+main {
+    min-width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sekce1 {
+    width: 42%;
+    border-top-right-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    box-shadow: 2px 2px 1px 0px rgba(145, 138, 63, 0.8), 0px 2px 1px 0px inset rgba(143, 56, 56, 0.8);
+    position: absolute;
+    top: 300px;
+    left: 0;
+    background-color: rgba(109, 109, 114, 0.8);
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.Nadpis_1 {
+    font-family: "Ga Maamli", sans-serif;
+    font-size: 5em;
+}
+
+.Čára_h1 {
+    width: 45%;
+    height: 4px;
+    background-color: black;
+    border: none;
+    margin: 20px auto;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    font-family: "Alfa Slab One", serif;
+    color: rgb(31, 31, 31);
+    padding-top: 5px;
+}
+
+.Fotka_ramen img, .Fotka_ryze img {
+    height: 115px;
+    width: 135px;
+}
+
+.sekce2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home_background {
+    position: absolute;
+    top: 140px;
+    right: 140px;
+}
+
+.Home_background img {
+    height: 450px;
+    width: 510px;
+}
+
+.nadpis_3 {
+    margin-top: 20px;
+    color: rgb(255, 166, 0);
+    position: absolute;
+    top: 72%;
+    right: 15%;
+}
+
+h3 {
+    margin-top: 15px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 8px black;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: rgb(229, 226, 226);
+    border-radius: 3px;
+}
+
+.Socials{
+    display: none;
+}
+
+/* Media queries pro mobilní verzi */
+@media (max-width: 900px) {
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+        right: -20px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .hamburger span {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        transition: 0.3s;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 68%;
+        background: rgba(92, 43, 43, 0.8);
+        position: fixed;
+        top: 7px;
+        right: -100%;
+        height: 98vh;
+        transition: 0.5s ease;
+        z-index: 10;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+
+    .navbar a {
+        color: white;
+        font-size: 1.5em;
+        padding: 15px;
+        text-decoration: none;
+        display: block;
+        transition: 0.5s;
+    }
+
+    .navbar > a:hover {
+        background-color: rgb(186, 99, 99);
+    }
+
+    .buttony::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        transition: 0.4s;
+        height: 0px;
+    }
+
+    /* Zobrazení navbaru po rozkliknutí menu */
+    .menu-toggle:checked ~ .navbar_bts .navbar {
+        right: 0;
+    }
+
+    .Socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .fa-instagram:hover{
+        color: #c13584;
+        transition: 0.5s;
+    }
+    
+    .fa-facebook:hover{
+        color: rgb(64, 64, 218);
+        transition: 0.5s;
+    }
+
+    .fa-square-x-twitter:hover{
+        color: black;
+        transition: 0.5s;
+    }
+
+    .fa-youtube:hover{
+        color:rgb(198, 55, 55);
+        transition: 0.5s;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+
+    header img {
+        height: 120px;
+        width: 240px;
+        top: 5px;
+        left: -25px;
+        position: relative;
+    }
+
+    .sekce1 {
+        width: 78%;
+        height: 53vh;
+        margin-top: 20px;
+        left: 0;
+        top: 150px;
+        position: absolute;
+        padding: 15px;
+    }
+
+    .Čára_h1 {
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        border: none;
+        margin: 20px auto;
+    }
+
+    .Home_background {
+        position: absolute;
+        right: 5px;
+        top: 545px;
+    }
+
+    .Home_background img {
+        width: 160px;
+        height: 138px;
+    }
+
+    .nadpis_3 {
+        position: absolute;
+        left: 15px;
+        margin-top: 55px;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+    
+    .Nadpis_1 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .Fotka_ramen img, .Fotka_ryze img {
+        height: 50px;
+        width: 65px;
+    }
+}

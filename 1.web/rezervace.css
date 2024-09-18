@@ -1,0 +1,803 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Londrina+Solid:wght@100;300;400;900&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Underdog&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Ramaraja&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
+
+:root{
+    --cervena: rgb(131, 49, 49);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.Reservation_background{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(56, 27, 38);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+header {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header img {
+    height: 175px;
+    width: 360px;
+    position: absolute;
+    top: 3px;
+    left: 100px;
+    cursor: pointer;
+}
+
+.headers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    height: 18vh;
+    padding: 20px 10px 20px 10px;
+}
+
+.navbar {
+    justify-content: space-around;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 640px;
+    margin-bottom: 2px;
+}
+
+.buttony {
+    color: rgb(200, 217, 232);
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-top: 35px;
+    cursor: pointer;
+    position: relative;
+}
+
+.buttony::after {
+    content: "";
+    background-color: rgb(186, 99, 99);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.4s;
+    height: 3px;
+    width: 0;
+}
+
+.buttony:hover::after {
+    width: 100%;
+}
+
+.Container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.sekce1{
+    height: 76vh;
+    width: 32vw;
+    background-color: black;
+    position: absolute;
+    top: 180px;
+    left: 80px;
+    border-radius: 50px;
+}
+
+.Nadpis_1{
+    color: rgb(214, 169, 46);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 2em;
+    font-family: "Underdog", system-ui;
+    text-shadow: 1px 1px 10px rgb(255, 0, 0);
+}
+
+.form_kontakt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#Jméno, #mail, #číslo{
+    height: 4vh;
+    width: 28vw;
+    border-radius: 8px;
+    background-color: var(--cervena);
+    color: rgb(239, 239, 239);
+    padding: 5px;
+}
+
+.Možnost_1{
+    margin-top: 15px;
+    margin-left: 33px;
+    display: flex;
+}
+
+.možnosti{
+    height: 3vh;
+    width: 5vw;
+    margin-left: 3px;
+    border-radius: 6px;
+    background-color: var(--cervena);
+    color: rgb(187, 178, 178); 
+    text-align: center;
+    font-size: 1em;
+    padding-top: 3px;
+}
+
+.vybrat_počet_osob{
+    background-color: var(--cervena);
+    color: white;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.form_kontakt_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#Zpráva{
+    width: 27vw;
+    margin-left: -12px;
+    border-radius: 8px;
+    background-color: var(--cervena);
+    color: rgb(239, 239, 239);
+    padding: 15px;
+    padding-bottom: 40px;
+    margin-top: 15px;
+    resize: none;
+    border: none;
+    border: 2px solid #b4562a;
+    box-shadow: 1px 2px 4px 0px rgb(227, 66, 66), -1    px -2px 4px 0px rgb(227, 66, 66);
+    transition: 0.5s;
+    outline: none;
+}
+
+#Zpráva:focus{
+    border: 3px solid rgb(223, 23, 23);
+    box-shadow: 1px 2px 4px 0px orangered , -1px -2px 4px 0px orangered;
+}
+
+.Send_button{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.send{
+    position: absolute;
+    top: 12px;
+    right: 50px;
+    letter-spacing: 0.1em   ;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    background-color: var(--cervena);
+    border: 2px solid rgb(154, 154, 151);
+    color: white;
+    transition:.5s;
+    cursor: pointer;
+    font-family: "Convergence", sans-serif;
+}
+
+.send:hover{
+    background-color: rgb(221, 64, 64);
+    border-color: rgb(184, 91, 91);
+    box-shadow: 1px 1px 6px red, inset 1px 1px 6px red;
+}
+
+.cas{
+    font-size: 0.8em;
+    font-family: "Ramaraja", serif;
+}
+
+.Doba{
+    color: white;
+    font-size: 1.8em;
+    position: relative;
+    top: 20px;
+    font-family: "Ramaraja", serif;
+}
+
+
+.otevírací_doba{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 32vw;
+}
+
+.Fotecka img{
+    height: 160px;
+    position: relative;
+    top: 75px;
+    right: 5px;
+}
+
+.Doba_otev h3{
+    color: white;
+    font-size: 2.2em;
+    position: relative;
+    top: 15px;
+    font-family: "Akaya Telivigala", system-ui;
+}
+
+.sekce2{
+    height: 81vh;
+    width: 55vw;
+    background-color: black;
+    position: absolute;
+    top: 140px;
+    right: 80px;
+    border-radius: 50px;
+}
+
+.Footer_Konec{
+    width: 100%;
+    height: 35vh;
+    background-color: rgb(72, 42, 54);
+}
+
+.Kocka_btn img{
+    height: 142px;
+    width: 280px;
+    margin-left: 120px;
+    position: relative;
+    left: -50px;
+}
+
+
+.Footer_Konec_2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px grey solid;
+    margin-left: 120px;
+    width: 82vw;
+}
+
+.Socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Socials_2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cislo_Mail{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.icon{
+    margin-left: 20px;
+    font-size: 1.9em;
+    text-decoration: none;
+}
+
+
+.Kontakt_2{
+    font-size: 1.1em;
+    margin: 10px 0px 0px 30px;
+    color: rgb(253, 253, 253);
+}
+
+.fa-instagram{
+    color: rgb(153, 147, 147);
+}
+
+.fa-facebook{
+    color: rgb(153, 147, 147);
+}
+
+.fa-square-x-twitter{
+    color: rgb(153, 147, 147);
+}
+
+.fa-youtube{
+    color: rgb(153, 147, 147);
+}
+
+.fa-instagram:hover{
+    color: #c13584;
+    transition: 0.5s;
+}
+
+.fa-facebook:hover{
+    color:rgb(64, 64, 218);
+    transition: 0.5s;
+}
+
+.fa-youtube:hover{
+    color: rgb(198, 55, 55);
+    transition: 0.5s;
+}
+
+.fa-square-x-twitter:hover{
+    color: black;
+    transition: 0.5s;
+}
+
+.Konec{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Konec_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 72%;
+    margin-top: 5px;
+}
+
+.Konec_2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.Konec_2 a:hover{
+    color: #c73085;
+    transition: 0.2s;
+    letter-spacing: 0.1em;
+}
+
+.Menu_Footer{
+    margin-top: 5px;
+}
+
+.Copyright{
+    font-size: 1.2em;
+    color: white;
+}
+
+.fa-envelope{
+    font-size: 1em;
+    color: rgb(205, 210, 214);
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.fa-phone{
+    margin-right: 5px;
+}
+
+.Map_place{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+iframe{
+    margin-top: 15px;
+    height: 520px;
+    width: 50vw;
+    border-radius: 10px;
+    border: solid 1.8px rgb(231, 24, 127);
+    box-shadow: 1px 1px 10px rgb(218, 57, 25);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: rgb(229, 226, 226);
+    border-radius: 3px;
+}
+
+.Socials_mobile{
+    display: none;
+}
+
+input{  
+    border: none;
+    border: 2px solid #b4562a;
+    box-shadow: 1px 2px 4px 0px rgb(227, 66, 66), -1    px -2px 4px 0px rgb(227, 66, 66);
+    transition: 0.5s;
+    outline: none;
+}
+
+input:focus{
+    border: 3px solid rgb(223, 23, 23);
+    box-shadow: 1px 2px 4px 0px orangered , -1px -2px 4px 0px orangered;
+}
+
+/* Skrytí hamburgerové ikony a přepnutí navigace na vertikální zobrazení na mobilních zařízeních */
+@media (max-width: 900px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        background: rgba(56, 27, 38, 1); /* Nastavit barvu pozadí pro header, pokud je potřeba */
+    }
+
+    header img {
+        height: 120px;
+        width: 240px;
+        top: 5px;
+        left: -25px;
+        position: relative;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+        right: -20px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .hamburger span {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        transition: 0.3s;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 68%;
+        background: rgba(92, 43, 43, 0.8);
+        position: fixed;
+        top: 7px;
+        right: -100%;
+        height: 98vh;
+        transition: 0.5s ease;
+        z-index: 10;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+
+    .navbar a {
+        color: white;
+        font-size: 1.5em;
+        padding: 15px;
+        text-decoration: none;
+        display: block;
+        transition: 0.5s;
+        position: relative;
+        top: -2px;
+    }
+
+    .navbar > a:hover {
+        background-color: rgb(186, 99, 99);
+    }
+
+    .buttony::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        transition: 0.4s;
+        height: 0px;
+    }
+
+    /* Zobrazení navbaru po rozkliknutí menu */
+    .menu-toggle:checked ~ .navbar_bts .navbar {
+        right: 0%; /* Po rozkliknutí se navbar posune zpět na pozici 0 */
+    }
+
+    .Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background: rgba(56, 27, 38, 1); /* Nastavit barvu pozadí pro Container */
+    }
+
+    .sekce2 {
+        width: 90vw;
+        position: static;
+        border-radius: 20px;
+        margin: 10px 0;
+        height: 58vh; 
+    }
+
+    .sekce1{
+        width: 90vw;
+        position: static;
+        border-radius: 20px;
+        margin-top: 112px;
+        height: 70vh 
+    }
+
+    iframe {
+        width: 90%;
+        height: 320px;
+        margin-top: 10px;
+    }
+
+    .Footer_Konec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Footer_Konec_2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+        left: -50px;
+        width: 80vw;
+    }
+
+    .Kocka_btn img {
+        height: 100px;
+        width: 200px;
+        position: relative;
+        left: -40px;
+        top: -12px;
+    }
+
+    .Socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Socials_2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        margin-left: 13px;
+        font-size: 1.8em;
+        text-decoration: none;
+        position: relative;
+        right: 65px;
+        top: 10px;
+    }
+
+    .Cislo_Mail {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 105px;
+        top: 8px;
+        margin-right: 10px;
+
+    }
+
+    .Cislo_Mail p{
+        font-size: 0.90em;
+    }
+
+    .button_pics{
+        position: relative;
+        left: -20px;
+        top: 13px;
+        font-size: 0.80em;
+    }
+
+    #button_pics_2{
+        position: relative;
+        top: 15px;
+    }
+
+    .Kontakt_2 {
+        font-size: 0.80em;
+    }
+
+    .informace{
+        font-size: 0.80em;
+    }
+    
+    .Reservation_background {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(56, 27, 38); /* Zajistit, že pozadí bude správně */
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .Socials_mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .fa-instagram:hover{
+        color: #c13584;
+        transition: 0.5s;
+    }
+    
+    .fa-facebook:hover{
+        color: rgb(64, 64, 218);
+        transition: 0.5s;
+    }
+
+    .fa-square-x-twitter:hover{
+        color: black;
+        transition: 0.5s;
+    }
+
+    .fa-youtube:hover{
+        color:rgb(198, 55, 55);
+        transition: 0.5s;
+    }
+
+    .icon_2 i{
+        color: white;
+    }
+
+    .Nadpis_1{
+        font-size: 1.6em;
+    }
+
+    .Konec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75vw;
+    }
+
+    .Konec_2{
+        font-size: 0.96em;
+    }
+
+    .Mobile_rotate{
+        position: relative;
+        right: -15px;
+        font-size: 0.96em;
+    }
+
+    .Socials_2 a{
+        font-size: 1.5em;
+    }
+
+    .otevírací_doba{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width:98%;
+    }
+
+    .Fotecka img{
+        height: 100px;
+        top: 55px;
+    }
+
+    .Doba_otev{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 15px;
+    }
+
+    .Doba_otev h3{
+        font-size: 1.8em;
+        position: relative;
+    }
+
+    .Doba{
+        font-size: 1.5em;
+    }
+
+    .cas{
+        font-size: 0.90em;
+    }
+    
+    .send{
+        height: 40px;
+        width: 100px;
+        font-size: 0.80em;
+        text-align: center;
+        padding-bottom: 25px;
+        padding: 12px 60px 25px 20px;
+    }
+
+    .Send_button{
+        display: flex;
+        position: relative;
+        right: -20px;
+        top: 5px;
+    }
+
+    #Zpráva{
+        width: 80vw;
+        margin-left: 2px;
+        padding-bottom: 40px;
+    }
+
+    .Možnost_1{
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+    }
+
+    .možnosti{
+        width: 20vw;
+        padding: 10px 5px 30px 4px;
+    }
+
+    #Jméno{
+        width: 80vw;
+    }
+
+    #mail{
+        width: 80vw;
+    }
+
+    #číslo{
+        width: 80vw;
+    }
+}
