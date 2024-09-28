@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arbutus+Slab&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +12,14 @@ html{
 .Contacts_background{
     width: 100%;
     min-height: 100vh;
+    background-color:rgb(56, 27, 38);
+}
+
+.Contacts_background_2{
+    width: 100%;
+    min-height: 65vh;
     background-color: rgb(56, 27, 38);
+    border-top: 1px rgb(125, 49, 28) solid;
 }
 
 header {
@@ -86,11 +95,11 @@ header img {
     margin-top: 10px;
 }
 
-h1{
+.Majitele{
     text-shadow: 0px 0px 5px rgb(219, 192, 15);
 }
 
-h3{
+.Zheng, .Pepík, .Martin{
     margin-top: 16px;
     font-size: 1.4em;
     color: rgb(168, 44, 44);
@@ -227,7 +236,6 @@ h3{
 }
 
 .fa-envelope{
-    font-size: 1em;
     color: rgb(205, 210, 214);
     text-decoration: none;
     margin-right: 5px;
@@ -237,4 +245,115 @@ h3{
     margin-right: 5px;
 }
 
+.Udaje{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 30px;
+    font-family: "Arbutus Slab", serif;
+}   
 
+.Udaje p{
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.Udaje_2{
+    font-size: 0.8em;
+}
+
+#C_B_2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.C_B_2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Nadpis_con{
+    text-align: start;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.Zajem_1{
+    color: rgb(202, 156, 19);
+    text-shadow: 1px 1px 5px rgb(216, 33, 33);
+    margin-left: 80px;
+    width: 56vw;
+}
+
+.Zajem_2{
+    font-size: 3em;
+}
+
+.contact{
+    margin-top: 20px;
+    color: white;
+    font-size: 1.5em;
+    margin-left: 60px;
+}
+
+.Kontaktování{
+    margin-top: 45px;
+}
+
+.Zde_psat{
+    font-size: 2.5em;
+    color: rgb(202, 156, 19);
+    text-shadow: 1px 1px 5px rgb(216, 33, 33);
+}
+
+.formulář{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.Kontakt_zde{
+    height: 53vh;
+    width: 28%;
+}
+
+input{
+    padding: 15px 50px 18px 5px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color: rgba(128, 41, 41, 0.973);
+    color: white;
+    font-size: 0.9em;
+    outline: none;
+    transition: .5s;
+    border: none;
+}
+
+input:focus{
+    border: 0px solid red;
+    box-shadow: 2px 3px 10px 0px orangered , -2px -3px 10px 0px orangered;;
+    
+}
+
+textarea{
+    padding: 10px 20px 65px 5px;
+    margin-top: 15px;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(128, 41, 41, 0.973);
+    color: white;
+    font-size: 1.3em;
+    outline: none;
+    transition:.5s;
+}
+
+textarea:focus{
+    border: 0px solid red;
+    box-shadow: 2px 3px 10px 0px orangered , -2px -3px 10px 0px orangered;;
+}
