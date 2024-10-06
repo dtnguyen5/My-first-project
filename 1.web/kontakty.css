@@ -7,11 +7,12 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .Contacts_background{
     width: 100%;
-    min-height: 100vh;
+    min-height: 105vh;
     background-color:rgb(56, 27, 38);
 }
 
@@ -23,11 +24,12 @@ html{
 }
 
 header {
-    width: 90%;
-    height: 19vh;
+    width: 100%;
+    height: 25vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 header img {
@@ -39,11 +41,24 @@ header img {
     cursor: pointer;
 }
 
+.headers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    height: 18vh;
+    padding: 20px 10px 20px 10px;
+}
+
 .navbar {
     justify-content: space-around;
     gap: 30px;
     display: flex;
     align-items: center;
+    margin-left: 640px;
+    margin-bottom: 2px;
 }
 
 .buttony {
@@ -76,7 +91,7 @@ header img {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    top: 80px;
+    top: 30px;
 }
 
 .Fotka_V1, .Fotka_V2, .Fotka_V3{
@@ -399,4 +414,364 @@ textarea:focus{
     z-index: 1;
     font-size: 1.5em;
     text-shadow: 5px 5px 10px rgb(222, 20, 20);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: rgb(229, 226, 226);
+    border-radius: 3px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: rgb(229, 226, 226);
+    border-radius: 3px;
+}
+
+.Socials_mobile{
+    display: none;
+}
+
+@media (max-width: 900px){
+
+    .Contacts_background{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 229vh;
+        background-color:rgb(56, 27, 38);
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        background: rgba(56, 27, 38, 1); /* Nastavit barvu pozadí pro header, pokud je potřeba */
+        position: relative;
+        top: -75px;
+    }
+
+    header img {
+        height: 120px;
+        width: 240px;
+        top: 5px;
+        left: -25px;
+        position: relative;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+        right: -20px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .hamburger span {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        transition: 0.3s;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 68%;
+        background: rgba(92, 43, 43, 0.8);
+        position: fixed;
+        top: 7px;
+        right: -100%;
+        height: 98vh;
+        transition: 0.5s ease;
+        z-index: 10;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+
+    .navbar a {
+        color: white;
+        font-size: 1.5em;
+        padding: 15px;
+        text-decoration: none;
+        display: block;
+        transition: 0.5s;
+        position: relative;
+        top: -2px;
+    }
+
+    .navbar > a:hover {
+        background-color: rgb(186, 99, 99);
+    }
+
+    .buttony::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        transition: 0.4s;
+        height: 0px;
+    }
+
+    /* Zobrazení navbaru po rozkliknutí menu */
+    .menu-toggle:checked ~ .navbar_bts .navbar {
+        right: 0%; /* Po rozkliknutí se navbar posune zpět na pozici 0 */
+    }
+
+    .Vedoucí_restaurace{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .Footer_Konec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Footer_Konec_2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+        left: -50px;
+        width: 80vw;
+    }
+
+    .Kocka_btn img {
+        height: 100px;
+        width: 200px;
+        position: relative;
+        left: -40px;
+        top: -12px;
+    }
+
+    .Socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Socials_2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        margin-left: 13px;
+        font-size: 1.8em;
+        text-decoration: none;
+        position: relative;
+        right: 65px;
+        top: 10px;
+    }
+
+    .Cislo_Mail {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 105px;
+        top: 8px;
+        margin-right: 10px;
+
+    }
+
+    .Cislo_Mail p{
+        font-size: 0.90em;
+    }
+
+    .button_pics{
+        position: relative;
+        left: -20px;
+        top: 13px;
+        font-size: 0.80em;
+    }
+
+    #button_pics_2{
+        position: relative;
+        top: 15px;
+    }
+
+    .Kontakt_2 {
+        font-size: 0.80em;
+    }
+
+    .informace{
+        font-size: 0.80em;
+    }
+    
+    .Reservation_background {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(56, 27, 38); /* Zajistit, že pozadí bude správně */
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .Socials_mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .fa-instagram:hover{
+        color: #c13584;
+        transition: 0.5s;
+    }
+    
+    .fa-facebook:hover{
+        color: rgb(64, 64, 218);
+        transition: 0.5s;
+    }
+
+    .fa-square-x-twitter:hover{
+        color: black;
+        transition: 0.5s;
+    }
+
+    .fa-youtube:hover{
+        color:rgb(198, 55, 55);
+        transition: 0.5s;
+    }
+
+    .icon_2 i{
+        color: white;
+    }
+
+    .Nadpis_1{
+        font-size: 1.6em;
+    }
+
+    .Konec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75vw;
+    }
+
+    .Konec_2{
+        font-size: 0.96em;
+    }
+
+    .Mobile_rotate{
+        position: relative;
+        right: -15px;
+        font-size: 0.96em;
+    }
+
+    .Socials_2 a{
+        font-size: 1.5em;
+    }
+
+    .Fotka_V1, .Fotka_V2, .Fotka_V3{
+        height: 270px;
+        width: 288px;
+        background-color: rgb(158, 149, 149);
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px 4px black ;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 50px;
+        margin-left: 20px;
+    }
+
+    .Contacts_background_2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .C_B_2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Zajem_1{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Zajem_2{
+        font-size: 1em;
+    }
+
+    .Kontakt_zde{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Informace_1, .Informace_2, .Informace_3{
+        text-align: center;
+        color: aliceblue;
+        margin-top: 70px;
+    }
+
+    .Udaje_2{
+        font-size: 0.75em;
+    }
+
+    .Udaje p{
+        font-size: 1.1em;
+    }
 }
