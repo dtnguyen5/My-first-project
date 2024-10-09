@@ -743,22 +743,53 @@ textarea:focus{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .Zajem_1{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        position: relative;
+        top: -200px;
+        left: 60px;
+        width: 150%;
+       
     }
 
     .Zajem_2{
-        font-size: 1em;
+        font-size: 2em;
+        width: 100%;
+    }
+
+    .Nadpis_con{
+        font-size: 1.7em;
+    }
+
+    .Kontaktování{
+        position: relative;
+        left: -58px;
+        top: -45px;
+    }
+
+    .contact{
+        font-size: 1.2em;
     }
 
     .Kontakt_zde{
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        position: relative;
+        left: -130px;
+        top: 85px;
+    }
+
+    .Zde_psat{
+        font-size: 2em;
+        width: 220%;
+        position: relative;
+        left: -78px;
     }
 
     .Informace_1, .Informace_2, .Informace_3{
@@ -770,8 +801,27 @@ textarea:focus{
     .Udaje_2{
         font-size: 0.75em;
     }
-
+    
     .Udaje p{
         font-size: 1.1em;
     }
+
+    .Contacts_background_2{
+        min-height: 100vh;
+    }
+
+    .formulář{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 230%;
+    }
+
+    input, textarea{
+        width: 140%;
+        position: relative;
+        left: -30px;
+    }
+
+
 }
