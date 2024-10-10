@@ -386,7 +386,7 @@ textarea:focus{
     padding: 0 2rem;
     border-radius: 15px;
     border: 2px solid rgb(184, 66, 19);
-    background:rgba(128, 14, 14, 0.8);
+    background: rgb(131, 49, 49);
     color: #fff9f9;
     cursor: pointer;
 }
@@ -413,7 +413,7 @@ textarea:focus{
     position: relative;
     z-index: 1;
     font-size: 1.5em;
-    text-shadow: 5px 5px 10px rgb(222, 20, 20);
+    text-shadow: 2px 2px 5px rgb(222, 20, 20);
 }
 
 .menu-toggle {
