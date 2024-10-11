@@ -556,7 +556,7 @@ textarea:focus{
 
     /* Zobrazení navbaru po rozkliknutí menu */
     .menu-toggle:checked ~ .navbar_bts .navbar {
-        right: 0%; /* Po rozkliknutí se navbar posune zpět na pozici 0 */
+        right: -5%; /* Po rozkliknutí se navbar posune zpět na pozici 0 */
     }
 
     .Vedoucí_restaurace{
@@ -566,6 +566,8 @@ textarea:focus{
         align-items: center;
 
     }
+
+    /*Zacatek FOOTER*/
 
     .Footer_Konec {
         display: flex;
@@ -717,6 +719,8 @@ textarea:focus{
     .Socials_2 a{
         font-size: 1.5em;
     }
+
+    /*KONEC FOOTERU*/
 
     .Fotka_V1, .Fotka_V2, .Fotka_V3{
         height: 270px;

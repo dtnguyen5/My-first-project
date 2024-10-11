@@ -1069,6 +1069,8 @@ Cena_kč{
 
 @media (max-width: 900px) {
 
+    
+
     .Menu_Ramen{
         display: flex;
         flex-direction: column;
@@ -1084,7 +1086,7 @@ Cena_kč{
         width: 100%;
         background: rgba(56, 27, 38, 1); /* Nastavit barvu pozadí pro header, pokud je potřeba */
         position: relative;
-        top: -75px;
+        top: 0px;
     }
 
     header img {
@@ -1158,8 +1160,48 @@ Cena_kč{
         right: 0%; /* Po rozkliknutí se navbar posune zpět na pozici 0 */
     }
 
+    .Socials_mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .fa-instagram:hover{
+        color: #c13584;
+        transition: 0.5s;
+    }
+    
+    .fa-facebook:hover{
+        color: rgb(64, 64, 218);
+        transition: 0.5s;
+    }
+
+    .fa-square-x-twitter:hover{
+        color: black;
+        transition: 0.5s;
+    }
+
+    .fa-youtube:hover{
+        color:rgb(198, 55, 55);
+        transition: 0.5s;
+    }
+
+    .icon_2 i{
+        color: white;
+    }
+
+    .Nadpis_1{
+        font-size: 1.6em;
+    }
+
     body{
         overflow-x: hidden;
+    }
+
+    html{
+        overflow-x: hidden;
+        scroll-behavior: smooth;
     }
     
     #Container_1{
@@ -1180,9 +1222,207 @@ Cena_kč{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
 
+    .Text_Box p{
+        font-size: 1.5em;
+        text-align: center;
 
+    }
+
+    .Nadpis_1{
+        display: flex;
+        position: relative;
+        top: -140px;
+        left: -5px;
+    }
+
+    .Nadpis_1 h1{
+        font-size: 1.5em;
+    }
+
+    .Container{
+        width: 95vw;
+        height: 65vh;
+        top: 150px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sekce1 img{
+        display: none;  /*fotka borcem, který se tady nema zobrazit*/
+    }
+
+    .Click{
+        display: none; /*text, který se nema tady zobrazits*/
     }
    
+    .sekce2 img {
+        display: none;
+    }
+
+    .Ceny_ramen{
+        display: none;
+    }
+
+    .Ceny_sushi{
+        display: none;
+    }
+
+    .Ceny_tteokbokki{
+        display: none;
+    }
+
+    .Ceny_Bubble_Tea{
+        display: none;
+    }
+
+
+    /*<------FOOTER------->*/
+    
+    .Footer_Konec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Footer_Konec_2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+        left: -50px;
+        width: 80vw;
+    }
+
+    .Kocka_btn img {
+        height: 100px;
+        width: 200px;
+        position: relative;
+        left: -40px;
+        top: -12px;
+    }
+
+    .Socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Socials_2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        margin-left: 13px;
+        font-size: 1.8em;
+        text-decoration: none;
+        position: relative;
+        right: 65px;
+        top: 10px;
+    }
+
+    .Cislo_Mail {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 105px;
+        top: 8px;
+        margin-right: 10px;
 
     }
+
+    .Cislo_Mail p{
+        font-size: 0.90em;
+    }
+
+    .Socials_mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .fa-instagram:hover{
+        color: #c13584;
+        transition: 0.5s;
+    }
+    
+    .fa-facebook:hover{
+        color: rgb(64, 64, 218);
+        transition: 0.5s;
+    }
+
+    .fa-square-x-twitter:hover{
+        color: black;
+        transition: 0.5s;
+    }
+
+    .fa-youtube:hover{
+        color:rgb(198, 55, 55);
+        transition: 0.5s;
+    }
+
+    .icon_2 i{
+        color: white;
+    }
+
+    .Nadpis_1{
+        font-size: 1.6em;
+    }
+
+    .Konec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75vw;
+    }
+
+    .Konec_2{
+        font-size: 0.96em;
+    }
+
+    .Mobile_rotate{
+        position: relative;
+        right: -15px;
+        font-size: 0.96em;
+    }
+
+    .Socials_2 a{
+        font-size: 1.5em;
+    }
+
+    .button_pics{
+        position: relative;
+        left: -20px;
+        top: 13px;
+        font-size: 0.80em;
+    }
+
+    #button_pics_2{
+        position: relative;
+        top: 15px;
+    }
+
+    .Kontakt_2 {
+        font-size: 0.80em;
+    }
+
+    .informace{
+        font-size: 0.80em;
+    }
+
+    }
+
