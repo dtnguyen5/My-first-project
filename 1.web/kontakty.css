@@ -728,7 +728,7 @@ textarea:focus{
         flex-direction: column;
         position: relative;
         top: 50px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .Contacts_background_2{
@@ -751,7 +751,7 @@ textarea:focus{
         flex-direction: column;
         position: relative;
         top: -200px;
-        left: 60px;
+        left: 56px;
         width: 150%;
        
     }
@@ -789,7 +789,7 @@ textarea:focus{
         font-size: 2em;
         width: 220%;
         position: relative;
-        left: -78px;
+        left: -83px;
     }
 
     .Informace_1, .Informace_2, .Informace_3{
@@ -818,10 +818,16 @@ textarea:focus{
     }
 
     input, textarea{
-        width: 140%;
+        width: 130%;
         position: relative;
         left: -30px;
     }
 
+    .Send_požadavek{
+        padding: 13px 96px 30px 20px;
+        position: relative;
+        top: 20px;
+        left: 78px;
+}      
 
 }

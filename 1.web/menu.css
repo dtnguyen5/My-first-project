@@ -18,6 +18,7 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -37,11 +38,12 @@ body {
 }
 
 header {
-    width: 90%;
-    height: 19vh;
+    width: 100%;
+    height: 25vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 header img {
@@ -50,6 +52,27 @@ header img {
     position: absolute;
     top: 8px;
     left: 100px;
+    cursor: pointer;
+}
+
+.headers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    height: 18vh;
+    padding: 20px 10px 20px 10px;
+}
+
+.navbar {
+    justify-content: space-around;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 640px;
+    margin-bottom: 2px;
 }
 
 .buttony {
@@ -59,13 +82,6 @@ header img {
     margin-top: 35px;
     cursor: pointer;
     position: relative;
-}
-
-.navbar {
-    justify-content: space-around;
-    gap: 30px;
-    display: flex;
-    align-items: center;
 }
 
 .buttony::after {
@@ -1003,13 +1019,170 @@ Cena_kč{
     margin-right: 5px;
 }
 
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: rgb(229, 226, 226);
+    border-radius: 3px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: rgb(229, 226, 226);
+    border-radius: 3px;
+}
+
+.Socials_mobile{
+    display: none;
+}
+
 @media (max-width: 900px) {
 
     .Menu_Ramen{
         display: flex;
         flex-direction: column;
-    }    
+       
+    }  
     
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        background: rgba(56, 27, 38, 1); /* Nastavit barvu pozadí pro header, pokud je potřeba */
+        position: relative;
+        top: -75px;
+    }
+
+    header img {
+        height: 120px;
+        width: 240px;
+        top: 5px;
+        left: -25px;
+        position: relative;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+        right: -20px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .hamburger span {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        transition: 0.3s;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 68%;
+        background: rgba(92, 43, 43, 0.8);
+        position: fixed;
+        top: 7px;
+        right: -100%;
+        height: 98vh;
+        transition: 0.5s ease;
+        z-index: 10;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+
+    .navbar a {
+        color: white;
+        font-size: 1.5em;
+        padding: 15px;
+        text-decoration: none;
+        display: block;
+        transition: 0.5s;
+        position: relative;
+        top: -2px;
+    }
+
+    .navbar > a:hover {
+        background-color: rgb(186, 99, 99);
+    }
+
+    .buttony::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        transition: 0.4s;
+        height: 0px;
+    }
+
+    /* Zobrazení navbaru po rozkliknutí menu */
+    .menu-toggle:checked ~ .navbar_bts .navbar {
+        right: 0%; /* Po rozkliknutí se navbar posune zpět na pozici 0 */
+    }
+
+    body{
+        overflow-x: hidden;
+    }
     
+    #Container_1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box_images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Text_Box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+    }
+   
 
     }
