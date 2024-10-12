@@ -556,7 +556,7 @@ textarea:focus{
 
     /* Zobrazení navbaru po rozkliknutí menu */
     .menu-toggle:checked ~ .navbar_bts .navbar {
-        right: -5%; /* Po rozkliknutí se navbar posune zpět na pozici 0 */
+        right: -0%; /* Po rozkliknutí se navbar posune zpět na pozici 0 */
     }
 
     .Vedoucí_restaurace{
@@ -828,7 +828,7 @@ textarea:focus{
     }
 
     .Send_požadavek{
-        padding: 13px 96px 30px 20px;
+        padding: 11px 96px 30px 20px;
         position: relative;
         top: 20px;
         left: 78px;

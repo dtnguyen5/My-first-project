@@ -1266,7 +1266,104 @@ Cena_kč{
     }
 
     .Ceny_ramen{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        height: 360vh;
+        
+    }
+
+    .Pozice_R{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Obrazky_ceny{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Menu_R_1, .Menu_R_2, .Menu_R_3, .Menu_R_4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .Text_R_3{
+        position: relative;
+        left: -30px;
+        top: -12px;
+        font-size: 0.8em;
+    }
+
+    .Text_R_2{
+        position: relative;
+        left: -42px;
+        top: -12px;
+        font-size: 0.8em;
+    }
+
+    .Text_R_1{
+        font-size: 0.8em;
+        position: relative;
+        left: 10px;
+        top: -18px;
+    }
+
+    .Text_R_4{
+        position: relative;
+        left: -20px;
+        top: -12px;
+        font-size: 0.8em;
+    }
+
+    .H1_ramen{
+        font-size: 2.5em;
+    }
+
+    .H2_mobile{
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .Nazev_ramen{
+        width: 98%;
+    }
+
+    .Smile_ramen{
+        height: 80px;
+        width: 90px;
+        position: relative;
+        left: 15px;
+    }
+
+    .Ramen_nazev{
+        font-size: 1.8em;
+    }
+
+    .Fotecka_R{
+        height: 80px;
+        width: 102px;
+    }
+    
+
+    .Menu_R_1 img, .Menu_R_2 img, .Menu_R_3 img, .Menu_R_4 img{
+        position: relative;
+        left: -20px;
+        width: 310px;
+        height: 305px;
+    }
+
+    .sekce3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .Ceny_sushi{
