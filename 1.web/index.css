@@ -90,6 +90,7 @@ main {
     align-items: center;
 }
 
+/* animace*/
 .sekce1 {
     width: 42%;
     border-top-right-radius: 5vh;
@@ -100,7 +101,24 @@ main {
     left: 0;
     background-color: rgba(109, 109, 114, 0.8);
     padding: 20px;
+    opacity: 0; /* Zpočátku skryté */
+    transform: translateY(20px); /* Posun dolů pro animaci */
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
+
+.container, .mobile {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Přidáváme třídu visible */
+.visible {
+    opacity: 1;
+    transform: translateY(0); /* Vrátí se na původní pozici */
+}
+
+/* tady konci animeace*/
 
 .container {
     display: flex;
@@ -166,6 +184,8 @@ h3 {
     font-size: 2.5em;
     text-shadow: 2px 2px 8px black;
 }
+
+
 
 .menu-toggle {
     display: none;
