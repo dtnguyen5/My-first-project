@@ -1327,7 +1327,6 @@ Cena_kč{
     }
 
     .H2_mobile{
-        font-size: 0.9em;
         text-align: center;
     }
 
@@ -1366,17 +1365,304 @@ Cena_kč{
         align-items: center;
     }
 
+    /* Konec Ramenu tady */
+    
     .Ceny_sushi{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        height: 450vh;
     }
 
-    .Ceny_tteokbokki{
-        display: none;
+    .Pozice_S{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    .Obrazky_ceny_2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Menu_S_1, .Menu_S_2, .Menu_S_3, .Menu_S_4, .Menu_S_5, .Menu_S_6{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    } 
+
+    .H1_sushi{
+         font-size: 2.5em;   
+    }
+
+    .Text_S_1{
+        font-size: 0.8em;
+        position: relative;
+        left: -42px;
+        top: -18px;
+    }
+
+    .Text_S_2{
+        font-size: 0.8em;
+        position: relative;
+        left: -25px;
+        top: -18px;
+    }
+
+    .Text_S_3{
+        font-size: 0.8em;
+        position: relative;
+        left: -65px;
+        top: -18px;
+    }
+
+    .Text_S_4{
+        font-size: 0.8em;
+        position: relative;
+        left: -35px;
+        top: -18px;
+    }
+
+    .Text_S_5{
+        font-size: 0.8em;
+        position: relative;
+        left: -8px;
+        top: -18px;
+    }
+
+    .Text_S_6{
+        font-size: 0.8em;
+        position: relative;
+        left: -42px;
+        top: -18px;
+    }
+
+    .Menu_S_1 img, .Menu_S_2 img, .Menu_S_3 img, .Menu_S_4 img, .Menu_S_5 img, .Menu_S_6 img{
+        position: relative;
+        left: -20px;
+        width: 360px;
+        height: 250px;
+    }
+
+    /*Konec sushi*/
+
+    /* Zacatek tteokbokki*/
+    .Ceny_tteokbokki{
+        display: flex;
+        flex-direction: column;
+        height: 330vh;
+    }
+
+    .Pozice_T{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Obrazky_ceny_3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Menu_T_1, .Menu_T_2, .Menu_T_3, .Menu_T_4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .H1_tteokbokki{
+        font-size: 2.5em;
+        text-align: start;
+    }
+
+    .Mobile_T_1{
+        position: relative;
+        left: -30px;
+    }
+
+    .Text_T_1{
+        font-size: 0.78em;
+        position: relative;
+        left: -5px;
+        top: -18px;
+    }
+
+    .Mobile_T_2{
+        position: relative;
+        left: -30px;    
+    }
+
+    .Text_T_2{
+        font-size: 0.78em;
+        position: relative;
+        left: -26px;
+        top: -18px;
+    }
+
+    .Mobile_T_3{
+        position: relative;
+        left: -30px; 
+    }
+
+    .Text_T_3{
+        font-size: 0.78em;
+        position: relative;
+        left: -35px;
+        top: -18px;
+    }
+
+    .Mobile_T_4{
+        position: relative;
+        left: -30px; 
+    }
+
+    .Text_T_4{
+        font-size: 0.78em;
+        position: relative;
+        left: -42px;
+        top: -18px;
+    }
+
+    .Menu_T_1 img, .Menu_T_2 img, .Menu_T_3 img, .Menu_T_4 img{
+        position: relative;
+        left: -10px;
+        width: 330px;
+        height: 250px;
+    }
+
+    /*Konec tteokbokki*/
+
+
+    /* začátek bubble ted*/
 
     .Ceny_Bubble_Tea{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        height: 525vh;
     }
+
+    .Pozice_B{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }   
+    
+    .Obrazky_ceny_4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Menu_B_1, .Menu_B_2, .Menu_B_3, .Menu_B_4, .Menu_B_5, .Menu_B_6{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .H1_Bubble_Tea{
+        font-size: 2.5em;
+    }
+
+    .Mobile_B_1{
+        position: relative;
+        left: -25px;
+    }
+
+    .Text_B_1{
+        font-size: 0.8em;
+        position: relative;
+        left: -20px;
+        top: -18px;
+    }
+
+    .Mobile_B_2{
+        position: relative;
+        left: -23px;
+    }
+
+    .Text_B_2{
+        font-size: 0.8em;
+        position: relative;
+        left: -52px;
+        top: -18px;
+    }
+
+    .Mobile_B_3{
+        position: relative;
+        left: -25px;
+    }
+
+    .Text_B_3{
+        font-size: 0.8em;
+        position: relative;
+        left: -42px;
+        top: -18px;
+    }
+
+    .Mobile_B_4{
+        position: relative;
+        left: -25px;
+    }
+
+    .Text_B_4{
+        font-size: 0.8em;
+        position: relative;
+        left: -35px;
+        top: -18px;
+    }
+
+    .Mobile_B_5{
+        position: relative;
+        left: -25px;
+    }
+
+    .Text_B_5{
+        font-size: 0.8em;
+        position: relative;
+        left: -20px;
+        top: -18px;
+    }
+
+    .Mobile_B_6{
+        position: relative;
+        left: -25px;
+    }
+
+    .Text_B_6{
+        font-size: 0.8em;
+        position: relative;
+        left: -52px;
+        top: -18px;
+    }
+
+    .Menu_B_1 img, .Menu_B_2 img, .Menu_B_3 img{
+        position: relative;
+        left: -30px;
+        width: 300px;
+        height: 320px;
+    }
+
+    .Menu_B_4 img, .Menu_B_5 img, .Menu_B_6 img{
+        position: relative;
+        left: -90px;
+        width: 300px;
+        height: 320px;
+    }
+
+    /* konec bubble tea*/
 
 
     /*<------FOOTER------->*/
@@ -1521,5 +1807,4 @@ Cena_kč{
         font-size: 0.80em;
     }
 
-    }
-
+}
