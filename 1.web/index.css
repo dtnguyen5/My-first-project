@@ -158,6 +158,8 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: opacity 2s ease;
 }
 
 .Home_background {

@@ -8,5 +8,11 @@ window.addEventListener('load', () => {
     sekce1.classList.add('visible');
     container.classList.add('visible');
     mobile.classList.add('visible');
+
+    const section = document.querySelector('.sekce2');
+    section.style.visibility = 'visible';
+    section.style.opacity = '1';
+
+    
 });
 

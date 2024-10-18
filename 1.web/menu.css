@@ -111,6 +111,7 @@ header img {
     box-shadow: 0px 0px 10px 4px rgb(118, 37, 37);
 }
 
+
 #Container_1 {
     display: flex;
     flex-direction: column;
@@ -168,6 +169,7 @@ p{
     cursor: pointer;
 
 }
+
 
 @keyframes bounce {
     0% {
@@ -1448,6 +1450,33 @@ Cena_kč{
         height: 250px;
     }
 
+    .Nazev_sushi{
+        width: 98%;
+        position: absolute;
+        right: 0px;
+    }
+
+    .Sushi_nazev{
+        font-size: 2em;
+        position: relative;
+        right: 15px;
+    }
+
+    .king_sushi{
+        height: 120px;
+        width: 115px;
+        position: relative;
+        left: 5px;
+    }
+
+    .glasses_sushi{
+        height: 100px;
+        width: 112px;
+        position: relative;
+        right: 10px;
+        top: 8px;
+    }
+
     /*Konec sushi*/
 
     /* Zacatek tteokbokki*/
@@ -1537,6 +1566,32 @@ Cena_kč{
         left: -10px;
         width: 330px;
         height: 250px;
+    }
+
+    .Nazev_tteokbokki{
+        width: 98%;
+    }
+
+    .Tteokbokki_nazev{
+        font-size: 1.3em;
+        position: relative;
+        left: -42px;
+    }
+
+    .Normal_Tteokbokki{
+        height: 105px;
+        width: 90px;
+        position: relative;
+        left: -10px;
+        top: 10px;
+    }
+
+    .Smile_Tteokbokki{
+        height: 90px;
+        width: 85px;
+        position: relative;
+        left: -40px;
+        top: 1px;
     }
 
     /*Konec tteokbokki*/
@@ -1660,6 +1715,33 @@ Cena_kč{
         left: -90px;
         width: 300px;
         height: 320px;
+    }
+
+    .Nazev_bubble_tea{
+        width: 98%;
+    }
+
+    .Bubble_tea_nazev{
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: -12px;
+    }
+
+    .Ghost_Bubble_Tea{
+        height: 80px;
+        width: 90px;
+        position: relative;
+        left: 8px;
+    }
+
+    .Bear_bubble_tea{
+        height: 95px;
+        width: 80px;
+        position: relative;
+        left: -5px;
+        top: 5px;
     }
 
     /* konec bubble tea*/
