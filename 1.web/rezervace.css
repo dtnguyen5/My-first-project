@@ -263,6 +263,19 @@ header img {
     border-radius: 50px;
 }
 
+/* Výchozí stav - skryté sekce */
+.sekce1, .sekce2 {
+    opacity: 0;
+    transform: translateY(5px); /* Posun dolů pro efekt */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Viditelný stav po přidání třídy 'visible' */
+.visible{
+    opacity: 1;
+    transform: translateY(0); /* Vrátí element na místo */
+}
+
 .Footer_Konec{
     width: 100%;
     height: 35vh;
@@ -549,12 +562,20 @@ input:focus{
         background: rgba(56, 27, 38, 1); /* Nastavit barvu pozadí pro Container */
     }
 
+    .visible{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
     .sekce2 {
         width: 90vw;
         position: static;
         border-radius: 20px;
         margin: 10px 0;
         height: 58vh; 
+        opacity: 0; /* Zpočátku skryté */
+        transform: translateY(20px); /* Posun dolů pro animaci */
+        transition: opacity 1s ease-out, transform 1s ease-out;
     }
 
     .sekce1{
@@ -562,7 +583,10 @@ input:focus{
         position: static;
         border-radius: 20px;
         margin-top: 112px;
-        height: 70vh 
+        height: 70vh;
+        opacity: 0; /* Zpočátku skryté */
+        transform: translateY(20px); /* Posun dolů pro animaci */
+        transition: opacity 1s ease-out, transform 1s ease-out;
     }
 
     iframe {

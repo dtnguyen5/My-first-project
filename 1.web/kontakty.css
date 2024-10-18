@@ -94,6 +94,17 @@ header img {
     top: 30px;
 }
 
+.Vedoucí_1, .Vedoucí_2, .Vedoucí_3{
+    opacity: 0; /* Zpočátku skryté */
+    transform: translateY(20px); /* Posun dolů pro animaci */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .Fotka_V1, .Fotka_V2, .Fotka_V3{
     height: 300px;
     width: 320px;
