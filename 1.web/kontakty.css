@@ -846,3 +846,24 @@ textarea:focus{
 }      
 
 }
+
+@media (max-width: 420px){
+    
+    .Zde_psat{
+        font-size: 2em;
+        width: 220%;
+        position: relative;
+        left: -86px;
+    }
+
+    .Kontakt_zde{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: -120px;
+        top: 85px;
+    }
+    
+}

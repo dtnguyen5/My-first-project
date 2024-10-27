@@ -1071,8 +1071,6 @@ Cena_kč{
 
 @media (max-width: 900px) {
 
-    
-
     .Menu_Ramen{
         display: flex;
         flex-direction: column;
@@ -1890,3 +1888,4 @@ Cena_kč{
     }
 
 }
+
